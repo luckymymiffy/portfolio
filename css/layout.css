@@ -370,7 +370,6 @@ section~section{
 
 #panel2 .swiper-slide {
     padding-top: 100px;
-    position: relative;
 }
 .panel2_swiper{
     width: 940px;
@@ -382,12 +381,35 @@ section~section{
     display: block;
     object-fit: cover;
 }
-#panel2 .blur{
+#panel2 .slide_top{
+  position: relative;
+  width: 768px; 
+  height: 253px;
+  margin: 0 auto;
+}
+#panel2 .slide_bot{
+  position: relative;
+  width: 768px;
+  height: 253px;
+  margin: 0 auto;
+}
+#panel2 .swiper-slide p{
+  opacity: 0;
+  width: 768px;
   position: absolute;
-  top: 100px;
-  left: 77px;
+  top: 40%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 3px 5px  #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  z-index: 99;
+}
+#panel2 .slide_bot:hover .blur,#panel2 .slide_top .blur{
+  position: absolute;
+  top: 0px;
   display: block;
-  width: 786px;
+  width: 768px;
   height: 253px;
   border-radius: 10px;
   backdrop-filter: blur(2px);
@@ -398,26 +420,14 @@ section~section{
     opacity: 1; 
     transition: 0.5s;
 }
-#panel2 .slide_bot{
-  position: relative;
-}
-#panel2 .swiper-slide p{
-  opacity: 0;
-  width: 768px;
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0px 3px 5px  #000;
-  font-weight: 500;
-  font-size: 1.2rem;
-  z-index: 99;
-}
 #panel2 .swiper-slide a:hover p{
   opacity: 1; 
   transition: 0.5s;
 }
+
+
+
+
 /********** #panel2 끝**********/
 
 /********** #panel3 **********/
