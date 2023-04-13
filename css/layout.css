@@ -27,6 +27,7 @@ body{
     height: 100%;
     margin: 0 auto;
 }
+
 /******************************** 기본세팅 *******************************/
 
 /********** section01 **********/
@@ -256,7 +257,7 @@ section~section{
 #sec03 .inner{
     height: 811px;
     width: 1198px;
-    background-image: url(../img/design.png);
+    background-image: url(../img/design1.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -266,7 +267,9 @@ section~section{
     align-items: center;
     overflow: hidden;
 }
-
+#sec03 .bookmark{
+  padding-top: 50px;
+}
 /*********** #panel1 ***********/
   #panel1{
     width: 940px;
