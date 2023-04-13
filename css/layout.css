@@ -424,9 +424,41 @@ section~section{
   opacity: 1; 
   transition: 0.5s;
 }
-
-
-
+#panel2 .slide2_top{
+  position: relative;
+  width: 600px; 
+  height: 253px;
+  margin: 0 auto;
+}
+#panel2 .slide2_bot{
+  position: relative;
+  width: 600px;
+  height: 253px;
+  margin: 0 auto;
+}
+#panel2 .slide2_top p, #panel2 .slide2_bot p{
+  opacity: 0;
+  width: 600px;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 3px 5px  #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  z-index: 99;
+}
+#panel2 .slide2_bot:hover .blur,#panel2 .slide2_top .blur{
+  position: absolute;
+  top: 0px;
+  display: block;
+  width: 600px;
+  height: 253px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  opacity: 0;
+}
 
 /********** #panel2 끝**********/
 
@@ -468,12 +500,49 @@ section~section{
     margin-bottom: 20px;
     padding-top: 55px;
 }
-.web_work_text p{
+.web_work_text h3{
     width: 392px;
     height: 371px;
     background-image: url(../img/page_m.png);
     background-repeat: no-repeat;
     padding: 100px;
+}
+#panel3 .swiper-slide span{
+  font-size: 1rem;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+#panel3 .swiper-slide p{
+  opacity: 0;
+  width: 392px;
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 3px 5px  #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  z-index: 99;
+}
+#panel3 .swiper-slide a:hover p{
+  opacity: 1; 
+  transition: 0.5s;
+}
+#panel3 .blur{
+  position: absolute;
+  top: 70px;
+  display: block;
+  width: 392px;
+  height: 590px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  opacity: 0;
+}
+#panel3 .swiper-slide a:hover .blur{
+  opacity: 1; 
+  transition: 0.5s;
 }
 /********** #panel3끝 **********/
 
